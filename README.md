@@ -10,6 +10,7 @@ A simple, self-hosted math-based CAPTCHA package for Laravel with image generati
 
 ## Table of Contents
 
+- [Screenshot](#screenshot)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -35,6 +36,12 @@ A simple, self-hosted math-based CAPTCHA package for Laravel with image generati
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Screenshot
+
+![CAPTCHA Example](docs/captcha-example.png)
+
+*Example of a generated math CAPTCHA image with noise and distortion*
 
 ## Features
 
