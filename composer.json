@@ -15,9 +15,19 @@
         "illuminate/cache": "^11.0|^12.0",
         "ext-gd": "*"
     },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "SolutionForest\\MathCaptcha\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SolutionForest\\MathCaptcha\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -28,6 +38,15 @@
             "aliases": {
                 "MathCaptcha": "SolutionForest\\MathCaptcha\\Facades\\MathCaptcha"
             }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "dev",
