@@ -1,0 +1,35 @@
+{
+    "name": "solution-forest/laravel-math-captcha",
+    "description": "A simple math-based CAPTCHA package for Laravel with image generation to prevent AI/OCR bypass",
+    "keywords": ["laravel", "captcha", "math", "security", "spam-prevention"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Solution Forest",
+            "email": "info@solutionforest.net"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/cache": "^11.0|^12.0",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SolutionForest\\MathCaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SolutionForest\\MathCaptcha\\MathCaptchaServiceProvider"
+            ],
+            "aliases": {
+                "MathCaptcha": "SolutionForest\\MathCaptcha\\Facades\\MathCaptcha"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
